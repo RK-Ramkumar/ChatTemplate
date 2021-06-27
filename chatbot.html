@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<style>
+.logo-image img{
+width: 46px;
+height: 46px;
+border-radius: 50%;
+padding: 4px 0px;
+
+}
+.icon-bar {
+  background-color: DodgerBlue;
+  overflow: hidden;
+  max-height: 55px;
+}
+.title-app {
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 22px;
+  padding: 15px 10px;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  position: absolute;
+  width:450px;
+  height: 450px;
+  border-radius: 5px;
+  left: 50%;
+  right: 10%;
+  top: 30px;
+  padding: 15px 10px;
+
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  position: absolute;
+  color: white;
+  padding: 15px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  right: 10px;
+  top: 15px;
+  width: 25px;
+  height: 25px;
+
+
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.send-image:hover .img{
+  opacity: 0.3;
+}
+.container {
+  padding: 2px 16px;
+  overflow: auto;
+
+}
+.bottom-container {
+  position: absolute;
+  bottom: 15px;
+  width: 80%;
+
+}
+
+.send-input {
+  position: absolute;
+  padding: 10px 10px;
+  font-size: 16px;
+  left: 8px;
+  bottom: 15px;
+	border: none transparent;
+	outline: none;
+	border-bottom: 1px solid DodgerBlue;
+  color: black;
+  width: 70%;
+}
+.send-image img{
+  width: 44px;
+  height: 48px;
+  border-radius: 70%;
+  position: absolute;
+  padding: 18px 0px;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+
+}
+
+</style>
+<body>
+<div class="card">
+<div class="icon-bar">
+	
+<table>
+  <tr>
+    <th><div class="logo-image">
+         <img src="user_icon.jpg"  class="img-fluid" alt="AskRCP" title="AskRCP">
+    </div></th>
+    <th>
+    	<div class="title-app">Ask RCP</div>
+	</th>
+    <th>
+	    	<!--<button class="btn"><i class="fa fa-refresh"></i>		</button>-->
+			<img src="refresh_icon.jpg" class=" btn img-fluid" onclick={alert("Refresh_Clicked")} alt="Refresh" title="Refresh"/>
+
+
+	</th>
+  </tr>
+</table>  
+</div>
+  <div class="container">
+
+<div class="bottom-container">
+<table>
+  <tr>
+    <th>
+      <input class="send-input" placeholder="Enter Your Message" type="text">
+	</th>
+    <th>
+		<div class="send-image"><img src="send_icon.jpg" class="img-fluid" onclick={alert("Clicked")} alt="Send" title="Send"/></div>
+	</th>
+  </tr>
+</table>
+</div>
+  </div>
+</div>
+
+
+</body>
+</html> 
